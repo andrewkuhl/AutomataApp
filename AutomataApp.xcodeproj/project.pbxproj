@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D06D83A28048E1B0036F02F /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D06D83928048E1B0036F02F /* CircleButtonView.swift */; };
+		0D06D83C280496FB0036F02F /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D06D83B280496FB0036F02F /* CircleButtonAnimationView.swift */; };
+		0DC0138528048A4D00194BCB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC0138428048A4D00194BCB /* HomeView.swift */; };
 		0DE5D0D828047B1A00CD719F /* AutomataAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE5D0D728047B1A00CD719F /* AutomataAppApp.swift */; };
 		0DE5D0DA28047B1A00CD719F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE5D0D928047B1A00CD719F /* ContentView.swift */; };
 		0DE5D0DC28047B1E00CD719F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DE5D0DB28047B1E00CD719F /* Assets.xcassets */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D06D83928048E1B0036F02F /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
+		0D06D83B280496FB0036F02F /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
+		0DC0138428048A4D00194BCB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0DE5D0D428047B1A00CD719F /* Automata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Automata.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DE5D0D728047B1A00CD719F /* AutomataAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomataAppApp.swift; sourceTree = "<group>"; };
 		0DE5D0D928047B1A00CD719F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +42,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D06D83728048DF10036F02F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0D06D83828048E080036F02F /* CircleButton */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0D06D83828048E080036F02F /* CircleButton */ = {
+			isa = PBXGroup;
+			children = (
+				0D06D83928048E1B0036F02F /* CircleButtonView.swift */,
+				0D06D83B280496FB0036F02F /* CircleButtonAnimationView.swift */,
+			);
+			path = CircleButton;
+			sourceTree = "<group>";
+		};
 		0DE5D0CB28047B1A00CD719F = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +79,7 @@
 		0DE5D0D628047B1A00CD719F /* AutomataApp */ = {
 			isa = PBXGroup;
 			children = (
+				0DE5D0EA280489C100CD719F /* Core */,
 				0DE5D0E5280481F200CD719F /* Extensions */,
 				0DE5D0D728047B1A00CD719F /* AutomataAppApp.swift */,
 				0DE5D0D928047B1A00CD719F /* ContentView.swift */,
@@ -79,6 +103,39 @@
 				0DE5D0E62804821400CD719F /* Color.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0DE5D0EA280489C100CD719F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0D06D83728048DF10036F02F /* Components */,
+				0DE5D0EB280489CB00CD719F /* Home */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		0DE5D0EB280489CB00CD719F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0DE5D0EC280489DB00CD719F /* ViewModels */,
+				0DE5D0ED280489E100CD719F /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0DE5D0EC280489DB00CD719F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0DE5D0ED280489E100CD719F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0DC0138428048A4D00194BCB /* HomeView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,8 +210,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DE5D0DA28047B1A00CD719F /* ContentView.swift in Sources */,
+				0DC0138528048A4D00194BCB /* HomeView.swift in Sources */,
 				0DE5D0D828047B1A00CD719F /* AutomataAppApp.swift in Sources */,
+				0D06D83A28048E1B0036F02F /* CircleButtonView.swift in Sources */,
 				0DE5D0E72804821400CD719F /* Color.swift in Sources */,
+				0D06D83C280496FB0036F02F /* CircleButtonAnimationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

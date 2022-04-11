@@ -11,7 +11,13 @@ import SwiftUI
 struct AutomataAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            
+            
+            NavigationView{
+                HomeView()
+                    .navigationBarHidden(true)
+            }
+            
         }
     }
 }
