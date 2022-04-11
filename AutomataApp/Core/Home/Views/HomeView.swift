@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @State private var showNewMachine: Bool = false
+    @State private var showMachineView: Bool = false
     
     var body: some View {
         
@@ -43,22 +43,22 @@ extension HomeView {
     
     private var homeHeader: some View{
         HStack{
-            CircleButtonView(iconName: showNewMachine ? "macwindow.badge.plus": "info")
+            CircleButtonView(iconName: showMachineView ? "macwindow.badge.plus": "info")
                 .animation(.none)
                 .background(
-                    CircleButtonAnimationView(animate: $showNewMachine)
+                    CircleButtonAnimationView(animate: $showMachineView)
                 )
             Spacer()
-            Text(showNewMachine ? "Machines" : "Automata")
+            Text(showMachineView ? "Machines" : "Automata")
                 .font(.headline)
                 .foregroundColor(Color.theme.accent)
                 .animation(.none)
             Spacer()
             CircleButtonView(iconName: "arrow.right")
-                .rotationEffect(Angle(degrees:  showNewMachine ? 180 : 0))
+                .rotationEffect(Angle(degrees:  showMachineView ? 180 : 0))
                 .onTapGesture {
                     withAnimation(.spring()){
-                        showNewMachine.toggle()
+                        showMachineView.toggle()
                     }
                 }
         }
