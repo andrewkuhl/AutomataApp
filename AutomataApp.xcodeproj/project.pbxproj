@@ -12,6 +12,8 @@
 		0D06D8C72804A30E0036F02F /* MachineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D06D8C62804A30E0036F02F /* MachineModel.swift */; };
 		0D06D8CD2804C94F0036F02F /* MachineRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D06D8CC2804C94F0036F02F /* MachineRowView.swift */; };
 		0D06D8CF2804CAA10036F02F /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D06D8CE2804CAA10036F02F /* PreviewProvider.swift */; };
+		0D06D8D12804FC0C0036F02F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D06D8D02804FC0C0036F02F /* HomeViewModel.swift */; };
+		0D06D8D5280502150036F02F /* InputRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D06D8D4280502150036F02F /* InputRowView.swift */; };
 		0DC0138528048A4D00194BCB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC0138428048A4D00194BCB /* HomeView.swift */; };
 		0DE5D0D828047B1A00CD719F /* AutomataAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE5D0D728047B1A00CD719F /* AutomataAppApp.swift */; };
 		0DE5D0DA28047B1A00CD719F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE5D0D928047B1A00CD719F /* ContentView.swift */; };
@@ -27,6 +29,8 @@
 		0D06D8C62804A30E0036F02F /* MachineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineModel.swift; sourceTree = "<group>"; };
 		0D06D8CC2804C94F0036F02F /* MachineRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineRowView.swift; sourceTree = "<group>"; };
 		0D06D8CE2804CAA10036F02F /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		0D06D8D02804FC0C0036F02F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		0D06D8D4280502150036F02F /* InputRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputRowView.swift; sourceTree = "<group>"; };
 		0DC0138428048A4D00194BCB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0DE5D0D428047B1A00CD719F /* Automata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Automata.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DE5D0D728047B1A00CD719F /* AutomataAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomataAppApp.swift; sourceTree = "<group>"; };
@@ -142,6 +146,7 @@
 		0DE5D0EC280489DB00CD719F /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				0D06D8D02804FC0C0036F02F /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 			children = (
 				0DC0138428048A4D00194BCB /* HomeView.swift */,
 				0D06D8CC2804C94F0036F02F /* MachineRowView.swift */,
+				0D06D8D4280502150036F02F /* InputRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -229,9 +235,11 @@
 				0DE5D0DA28047B1A00CD719F /* ContentView.swift in Sources */,
 				0D06D8C72804A30E0036F02F /* MachineModel.swift in Sources */,
 				0DC0138528048A4D00194BCB /* HomeView.swift in Sources */,
+				0D06D8D12804FC0C0036F02F /* HomeViewModel.swift in Sources */,
 				0DE5D0D828047B1A00CD719F /* AutomataAppApp.swift in Sources */,
 				0D06D83A28048E1B0036F02F /* CircleButtonView.swift in Sources */,
 				0DE5D0E72804821400CD719F /* Color.swift in Sources */,
+				0D06D8D5280502150036F02F /* InputRowView.swift in Sources */,
 				0D06D83C280496FB0036F02F /* CircleButtonAnimationView.swift in Sources */,
 				0D06D8CF2804CAA10036F02F /* PreviewProvider.swift in Sources */,
 				0D06D8CD2804C94F0036F02F /* MachineRowView.swift in Sources */,

@@ -14,15 +14,14 @@ struct MachineRowView: View {
     var body: some View {
         HStack(spacing: 0){
             leftColumn
+            
             Spacer()
             middleColumn
             Spacer()
             rightColumn
-                
-            
-            
-            
         }
+        .frame(maxHeight:45)
+        
     }
 }
 
@@ -39,24 +38,27 @@ struct MachineRowView_Previews: PreviewProvider {
 extension MachineRowView {
     private var leftColumn: some View{
         HStack(spacing:0) {
-            Text("\(machine.rank)")
+            Text("\(machine.id)")
                 .font(.caption)
                 .foregroundColor(Color.theme.secText)
                 .frame(minWidth: 30)
             Image(systemName: "cpu")
                 .frame(width:30,height:30)
+                .font(.system(size: 28))
             
-            Text(machine.id.uppercased())
+            Text("\(machine.name.uppercased())")
                 .font(.headline)
-                .padding(.leading, 6)
+                .padding(.leading, 1)
                 .foregroundColor(Color.theme.accent)
+                .lineLimit(1)
         }
+        
     }
     
     private var middleColumn: some View {
         Text("\(machine.Q.count) state \(machine.type)")
             .font(.headline)
-            .padding()
+            
             .foregroundColor(Color.theme.accent)
     }
     
