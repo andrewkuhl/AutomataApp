@@ -48,6 +48,7 @@ struct HomeView_Previews: PreviewProvider {
                 .preferredColorScheme(.dark)
                 .navigationBarHidden(true)
         }
+        .preferredColorScheme(.dark)
         .environmentObject(dev.homeVM)
     }
 }
@@ -131,7 +132,15 @@ extension HomeView {
                         Image(systemName: "rectangle.and.pencil.and.ellipsis")
                             .font(.system(size:45))
                             .padding()
-                        Text("create a machine and run some input!")
+                        Text("create a machine to run some input!")
+                        CircleButtonView(iconName: "arrow.right")
+                            .onTapGesture {
+                                withAnimation(.spring()){
+                                    showMachineView.toggle()
+                                }
+                            }
+                            .scaleEffect(2)
+                            .padding(.top, 20)
                     }
                     
                     
