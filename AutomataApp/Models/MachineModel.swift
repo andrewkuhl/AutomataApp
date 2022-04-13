@@ -45,8 +45,10 @@ struct Input: Identifiable, Codable{
     let acc: Bool
 }
 
-struct Transition: Codable{
-    let Qs, Qf, e , act1, act2, act3: String?
+
+struct Transition: Identifiable, Codable{
+    let id: Int
+    var Qs, Qf, e , act1, act2, act3: String
 }
 
 struct Machine: Identifiable, Codable{

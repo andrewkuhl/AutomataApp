@@ -9,8 +9,13 @@ import SwiftUI
 
 struct HomeView: View {
     
+    @Environment(\.presentationMode) var presentationMode
+    
     @EnvironmentObject private var vm: HomeViewModel
     @State private var showMachineView: Bool = false
+    @State private var showNewMachine = false
+    @State private var Mnum: Int = 0
+    
     
     var body: some View {
         
@@ -57,7 +62,7 @@ extension HomeView {
     
     private var homeHeader: some View{
         HStack{
-            CircleButtonView(iconName: showMachineView ? "macwindow.badge.plus": "info")
+            CircleButtonView(iconName: showMachineView ? "externaldrive.badge.plus": "info")
                 .animation(.none)
                 .background(
                     CircleButtonAnimationView(animate: $showMachineView)
@@ -132,7 +137,9 @@ extension HomeView {
                         Image(systemName: "rectangle.and.pencil.and.ellipsis")
                             .font(.system(size:45))
                             .padding()
+                            .foregroundColor(Color.theme.secText)
                         Text("create a machine to run some input!")
+                            .foregroundColor(Color.theme.secText)
                         CircleButtonView(iconName: "arrow.right")
                             .onTapGesture {
                                 withAnimation(.spring()){
@@ -141,6 +148,7 @@ extension HomeView {
                             }
                             .scaleEffect(2)
                             .padding(.top, 20)
+                            
                     }
                     
                     
@@ -192,10 +200,7 @@ extension HomeView {
                     }
                     else
                     {
-                        Image(systemName: "rectangle.and.pencil.and.ellipsis")
-                            .font(.system(size:45))
-                            .padding()
-                        Text("create a machine and run some input!")
+                        newMachine
                     }
                     
                     
@@ -206,4 +211,22 @@ extension HomeView {
         }
         .padding(10)
     }
+    private var newMachine: some View{
+        VStack{
+            Text("new machine")
+                .font(.system(size: 28))
+                .foregroundColor(Color.theme.secText)
+            CircleButtonView(iconName: "externaldrive.badge.plus")
+                .scaleEffect(3)
+                .padding(.top, 50)
+                .onTapGesture {
+                    showNewMachine.toggle()
+                }
+                .fullScreenCover(isPresented: $showNewMachine) {
+                            ModalView()
+                }
+
+        }
+    }
 }
+
