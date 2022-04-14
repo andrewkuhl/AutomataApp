@@ -12,8 +12,10 @@ struct HomeView: View {
     @Environment(\.presentationMode) var presentationMode
     
     @EnvironmentObject private var vm: HomeViewModel
+    
     @State private var showMachineView: Bool = false
     @State private var showNewMachine = false
+    @State private var showEditMachine = false
     @State private var Mnum: Int = 0
     
     
@@ -35,10 +37,6 @@ struct HomeView: View {
                     machineList
                         .transition(.move(edge: .trailing))
                 }
-                
-                
-
-                
                 
                 Spacer(minLength: 0)
             }
@@ -67,6 +65,16 @@ extension HomeView {
                 .background(
                     CircleButtonAnimationView(animate: $showMachineView)
                 )
+                .onTapGesture {
+                    if showMachineView {
+                        showNewMachine.toggle()
+                    }
+                }
+                .fullScreenCover(isPresented: $showNewMachine) {
+                    ModalView(type: 1, machine: Machine(id: vm.allMachines.count+1, name: "", type: "", Q: [], E: [], G: [], d: [], q0: "", qaccept: [], qreject: "", recents: []))
+                        .environmentObject(vm)
+                }
+            
             Spacer()
             Text("Automata")
                 .font(.system(size: 25))
@@ -191,10 +199,47 @@ extension HomeView {
                         .padding(.leading,30)
                         ScrollView
                         {
+                    
                             ForEach(vm.allMachines)
                             { machine in
-                                MachineRowView(machine: machine)
+                                
+                                HStack(spacing: 0){
+                                    HStack{
+                                        Text("\(machine.id)")
+                                            .font(.caption)
+                                            .foregroundColor(Color.theme.accent)
+                                            .frame(minWidth: 30)
+                                        Image(systemName: "cpu")
+                                            .frame(width:30,height:30)
+                                            .font(.system(size: 28))
+                                        
+                                        Text("\(machine.name.uppercased())")
+                                            .font(.headline)
+                                            .padding(.leading, 1)
+                                            .foregroundColor(Color.theme.accent)
+                                            .lineLimit(1)
+                                    }
+                                    Spacer()
+                                    Text("\(machine.type)")
+                                        .font(.headline)
+                                        .foregroundColor(Color.theme.accent)
+                                    Spacer()
+                                    Text("\(machine.Q.count) states")
+                                        .font(.headline)
+                                        .padding()
+                                        .foregroundColor(Color.theme.accent)
+                                }
+                                .frame(maxHeight:45)
+                                .contentShape(Rectangle())
+                                .onTapGesture {
+                                    showEditMachine.toggle()
+                                }
+                                .fullScreenCover(isPresented: $showEditMachine) {
+                                    ModalView(type: 2, machine: machine).environmentObject(vm)
+                                    
+                                }
                             }
+                            
                         }
                         
                     }
@@ -223,7 +268,8 @@ extension HomeView {
                     showNewMachine.toggle()
                 }
                 .fullScreenCover(isPresented: $showNewMachine) {
-                            ModalView()
+                    ModalView(type: 1, machine: Machine(id: vm.allMachines.count+1, name: "", type: "", Q: [], E: [], G: [], d: [], q0: "", qaccept: [], qreject: "", recents: []))
+                        .environmentObject(vm)
                 }
 
         }

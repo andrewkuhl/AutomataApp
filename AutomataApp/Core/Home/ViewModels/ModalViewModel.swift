@@ -24,7 +24,6 @@ class ModalViewModel: ObservableObject {
     
     init() {
         DispatchQueue.main.asyncAfter(deadline: .now()) {
-            
         }
     }
 }

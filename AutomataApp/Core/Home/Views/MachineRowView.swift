@@ -13,12 +13,30 @@ struct MachineRowView: View {
     
     var body: some View {
         HStack(spacing: 0){
-            leftColumn
-            
+            HStack{
+                Text("\(machine.id)")
+                    .font(.caption)
+                    .foregroundColor(Color.theme.secText)
+                    .frame(minWidth: 30)
+                Image(systemName: "cpu")
+                    .frame(width:30,height:30)
+                    .font(.system(size: 28))
+                
+                Text("\(machine.name.uppercased())")
+                    .font(.headline)
+                    .padding(.leading, 1)
+                    .foregroundColor(Color.theme.accent)
+                    .lineLimit(1)
+            }
             Spacer()
-            middleColumn
+            Text("\(machine.Q.count) state \(machine.type)")
+                .font(.headline)
+                .foregroundColor(Color.theme.accent)
             Spacer()
-            rightColumn
+            Text("\(machine.recents.count) inputs")
+                .font(.headline)
+                .padding()
+                .foregroundColor(Color.theme.accent)
         }
         .frame(maxHeight:45)
         

@@ -14,13 +14,11 @@ struct AutomataAppApp: App {
     
     var body: some Scene {
         WindowGroup {
-            
             NavigationView{
                 HomeView()
                     .navigationBarHidden(true)
             }
             .environmentObject(vm)
-            
         }
     }
 }
