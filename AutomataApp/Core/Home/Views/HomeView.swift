@@ -71,7 +71,7 @@ extension HomeView {
                     }
                 }
                 .fullScreenCover(isPresented: $showNewMachine) {
-                    ModalView(type: 1, machine: Machine(id: vm.allMachines.count+1, name: "", type: "", Q: [], E: [], G: [], d: [], q0: "", qaccept: [], qreject: "", recents: []))
+                    ModalView(type: 1, machine: Machine(id: vm.allMachines.count+1, name: "", type: "", Q: 0, E: [], G: [], d: [], q0: st(name: ""), qaccept: [], qreject: "", recents: []))
                         .environmentObject(vm)
                 }
             
@@ -197,51 +197,17 @@ extension HomeView {
                         .foregroundColor(Color.theme.secText)
                         .padding(.trailing,15)
                         .padding(.leading,30)
-                        ScrollView
-                        {
-                    
-                            ForEach(vm.allMachines)
-                            { machine in
+                            List
+                            {
+                                ForEach(vm.allMachines)
+                                { machine in
+                                    MachineRowView(machine: machine)
+                                        .environmentObject(vm)
+                                }
                                 
-                                HStack(spacing: 0){
-                                    HStack{
-                                        Text("\(machine.id)")
-                                            .font(.caption)
-                                            .foregroundColor(Color.theme.accent)
-                                            .frame(minWidth: 30)
-                                        Image(systemName: "cpu")
-                                            .frame(width:30,height:30)
-                                            .font(.system(size: 28))
-                                        
-                                        Text("\(machine.name.uppercased())")
-                                            .font(.headline)
-                                            .padding(.leading, 1)
-                                            .foregroundColor(Color.theme.accent)
-                                            .lineLimit(1)
-                                    }
-                                    Spacer()
-                                    Text("\(machine.type)")
-                                        .font(.headline)
-                                        .foregroundColor(Color.theme.accent)
-                                    Spacer()
-                                    Text("\(machine.Q.count) states")
-                                        .font(.headline)
-                                        .padding()
-                                        .foregroundColor(Color.theme.accent)
-                                }
-                                .frame(maxHeight:45)
-                                .contentShape(Rectangle())
-                                .onTapGesture {
-                                    showEditMachine.toggle()
-                                }
-                                .fullScreenCover(isPresented: $showEditMachine) {
-                                    ModalView(type: 2, machine: machine).environmentObject(vm)
-                                    
-                                }
                             }
-                            
-                        }
-                        
+                            .listStyle(.inset)
+                            Spacer()
                     }
                     else
                     {
@@ -268,7 +234,7 @@ extension HomeView {
                     showNewMachine.toggle()
                 }
                 .fullScreenCover(isPresented: $showNewMachine) {
-                    ModalView(type: 1, machine: Machine(id: vm.allMachines.count+1, name: "", type: "", Q: [], E: [], G: [], d: [], q0: "", qaccept: [], qreject: "", recents: []))
+                    ModalView(type: 1, machine: Machine(id: vm.allMachines.count+1, name: "", type: "", Q: 0, E: [], G: [], d: [], q0: st(name: ""), qaccept: [], qreject: "", recents: []))
                         .environmentObject(vm)
                 }
 

@@ -10,7 +10,6 @@
 		0D06D83A28048E1B0036F02F /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D06D83928048E1B0036F02F /* CircleButtonView.swift */; };
 		0D06D83C280496FB0036F02F /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D06D83B280496FB0036F02F /* CircleButtonAnimationView.swift */; };
 		0D06D8C72804A30E0036F02F /* MachineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D06D8C62804A30E0036F02F /* MachineModel.swift */; };
-		0D06D8CD2804C94F0036F02F /* MachineRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D06D8CC2804C94F0036F02F /* MachineRowView.swift */; };
 		0D06D8CF2804CAA10036F02F /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D06D8CE2804CAA10036F02F /* PreviewProvider.swift */; };
 		0D06D8D12804FC0C0036F02F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D06D8D02804FC0C0036F02F /* HomeViewModel.swift */; };
 		0D06D8D5280502150036F02F /* InputRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D06D8D4280502150036F02F /* InputRowView.swift */; };
@@ -25,13 +24,16 @@
 		0DE5D0DF28047B1E00CD719F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DE5D0DE28047B1E00CD719F /* Preview Assets.xcassets */; };
 		0DE5D0E72804821400CD719F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE5D0E62804821400CD719F /* Color.swift */; };
 		0DE5D0E9280485E700CD719F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0DE5D0E8280485E700CD719F /* .gitignore */; };
+		0DF68C5E2809BCDF004C2F40 /* MachineRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF68C5D2809BCDF004C2F40 /* MachineRowView.swift */; };
+		0DF68C602809BE09004C2F40 /* NewMachineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF68C5F2809BE09004C2F40 /* NewMachineView.swift */; };
+		0DF68C622809C363004C2F40 /* EditMachineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF68C612809C363004C2F40 /* EditMachineView.swift */; };
+		0DF68C642809D788004C2F40 /* StateNodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF68C632809D788004C2F40 /* StateNodeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0D06D83928048E1B0036F02F /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
 		0D06D83B280496FB0036F02F /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
 		0D06D8C62804A30E0036F02F /* MachineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineModel.swift; sourceTree = "<group>"; };
-		0D06D8CC2804C94F0036F02F /* MachineRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineRowView.swift; sourceTree = "<group>"; };
 		0D06D8CE2804CAA10036F02F /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		0D06D8D02804FC0C0036F02F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		0D06D8D4280502150036F02F /* InputRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputRowView.swift; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		0DE5D0DE28047B1E00CD719F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0DE5D0E62804821400CD719F /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		0DE5D0E8280485E700CD719F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		0DF68C5D2809BCDF004C2F40 /* MachineRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineRowView.swift; sourceTree = "<group>"; };
+		0DF68C5F2809BE09004C2F40 /* NewMachineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMachineView.swift; sourceTree = "<group>"; };
+		0DF68C612809C363004C2F40 /* EditMachineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMachineView.swift; sourceTree = "<group>"; };
+		0DF68C632809D788004C2F40 /* StateNodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateNodeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,11 +170,14 @@
 			isa = PBXGroup;
 			children = (
 				0DC0138428048A4D00194BCB /* HomeView.swift */,
-				0D06D8CC2804C94F0036F02F /* MachineRowView.swift */,
 				0D06D8D4280502150036F02F /* InputRowView.swift */,
 				0D6AC2922805D25100239D1D /* ModalView.swift */,
 				0D6AC2942806369400239D1D /* RowSelectView.swift */,
 				0D6AC29828069A7000239D1D /* RowTransitionView.swift */,
+				0DF68C5D2809BCDF004C2F40 /* MachineRowView.swift */,
+				0DF68C5F2809BE09004C2F40 /* NewMachineView.swift */,
+				0DF68C612809C363004C2F40 /* EditMachineView.swift */,
+				0DF68C632809D788004C2F40 /* StateNodeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -244,21 +253,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DF68C5E2809BCDF004C2F40 /* MachineRowView.swift in Sources */,
 				0D6AC29928069A7000239D1D /* RowTransitionView.swift in Sources */,
+				0DF68C642809D788004C2F40 /* StateNodeView.swift in Sources */,
 				0DE5D0DA28047B1A00CD719F /* ContentView.swift in Sources */,
 				0D06D8C72804A30E0036F02F /* MachineModel.swift in Sources */,
 				0DC0138528048A4D00194BCB /* HomeView.swift in Sources */,
 				0D06D8D12804FC0C0036F02F /* HomeViewModel.swift in Sources */,
 				0DE5D0D828047B1A00CD719F /* AutomataAppApp.swift in Sources */,
 				0D06D83A28048E1B0036F02F /* CircleButtonView.swift in Sources */,
+				0DF68C622809C363004C2F40 /* EditMachineView.swift in Sources */,
 				0D6AC2952806369400239D1D /* RowSelectView.swift in Sources */,
+				0DF68C602809BE09004C2F40 /* NewMachineView.swift in Sources */,
 				0D6AC29D2807368000239D1D /* ModalViewModel.swift in Sources */,
 				0D6AC2932805D25100239D1D /* ModalView.swift in Sources */,
 				0DE5D0E72804821400CD719F /* Color.swift in Sources */,
 				0D06D8D5280502150036F02F /* InputRowView.swift in Sources */,
 				0D06D83C280496FB0036F02F /* CircleButtonAnimationView.swift in Sources */,
 				0D06D8CF2804CAA10036F02F /* PreviewProvider.swift in Sources */,
-				0D06D8CD2804C94F0036F02F /* MachineRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,8 @@ import SwiftUI
 
 struct RowSelectView: View {
     
+    
+    
     let input: String
     
     @State var clicked = false

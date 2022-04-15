@@ -51,20 +51,25 @@ struct Transition: Identifiable, Codable{
     var Qs, Qf, e , act1, act2, act3: String
 }
 
+struct st: Identifiable, Codable, Hashable {
+    var name: String
+    var id: Self { self }
+}
 struct Machine: Identifiable, Codable{
     
     var id: Int
     var name: String
     var type: String
-    
-    var Q = [String]()
+    var Q: Int
+    var States = [st]()
     var E = [String]()
     var G = [String]()
     var d = [Transition]()
-    var q0: String
-    var qaccept = [String]()
+    var q0: st
+    var qaccept = [st]()
     var qreject: String
     var recents = [Input]()
+    var selectedItems = Set<st.ID>()
     
     mutating func addRecent(_lastInput: Input) {
         recents.append(_lastInput)

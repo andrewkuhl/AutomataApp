@@ -28,8 +28,8 @@ struct RowTransitionView: View {
                 List{
                     Section(header: Text("starting state")) {
                         Picker("state \(qs)", selection: $qs) {
-                                ForEach(ModalVM.States, id: \.self) {
-                                    Text($0)
+                                ForEach(ModalVM.States) { state in
+                                    Text("\(state.name)")
                                         .padding(.horizontal)
                                 }
                             }
@@ -47,8 +47,8 @@ struct RowTransitionView: View {
                     .padding()
                     Section(header: Text("ending state")) {
                         Picker("input \(qf)", selection: $qf) {
-                                ForEach(ModalVM.States, id: \.self) {
-                                    Text($0)
+                                ForEach(ModalVM.States) { state in
+                                    Text("\(state.name)")
                                         .padding(.horizontal)
                                 }
                             }
