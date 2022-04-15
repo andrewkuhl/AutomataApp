@@ -20,6 +20,5 @@
   </tr>
   <tr>
       <td><img src="Simulations/5.png" alt="5"></td>
-      <td><img src="Simulations/6.png" alt="6"></td>
   </tr>
 </table>
