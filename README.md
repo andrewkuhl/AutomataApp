@@ -1,10 +1,12 @@
 # Automata: an iOS app implementing the Automata Library. 
-
+## icon
 <table>
-    ## icon
   <tr>
     <td><img src="Simulations/icon.png"  alt="icon"></td>
    </tr> 
+</table>
+## simulation screenshots
+<table>
    <tr>
       <td><img src="Simulations/1.png" alt="1"></td>
       <td><img src="Simulations/2.png" alt="2"></td>
