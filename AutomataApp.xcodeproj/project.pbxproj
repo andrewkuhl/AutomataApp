@@ -17,6 +17,7 @@
 		0D6AC2952806369400239D1D /* RowSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6AC2942806369400239D1D /* RowSelectView.swift */; };
 		0D6AC29928069A7000239D1D /* RowTransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6AC29828069A7000239D1D /* RowTransitionView.swift */; };
 		0D6AC29D2807368000239D1D /* ModalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6AC29C2807368000239D1D /* ModalViewModel.swift */; };
+		0D6C705F280A2A7100ABD112 /* NewMachineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C705E280A2A7100ABD112 /* NewMachineView.swift */; };
 		0DC0138528048A4D00194BCB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC0138428048A4D00194BCB /* HomeView.swift */; };
 		0DE5D0D828047B1A00CD719F /* AutomataAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE5D0D728047B1A00CD719F /* AutomataAppApp.swift */; };
 		0DE5D0DA28047B1A00CD719F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE5D0D928047B1A00CD719F /* ContentView.swift */; };
@@ -25,7 +26,6 @@
 		0DE5D0E72804821400CD719F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE5D0E62804821400CD719F /* Color.swift */; };
 		0DE5D0E9280485E700CD719F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0DE5D0E8280485E700CD719F /* .gitignore */; };
 		0DF68C5E2809BCDF004C2F40 /* MachineRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF68C5D2809BCDF004C2F40 /* MachineRowView.swift */; };
-		0DF68C602809BE09004C2F40 /* NewMachineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF68C5F2809BE09004C2F40 /* NewMachineView.swift */; };
 		0DF68C622809C363004C2F40 /* EditMachineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF68C612809C363004C2F40 /* EditMachineView.swift */; };
 		0DF68C642809D788004C2F40 /* StateNodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF68C632809D788004C2F40 /* StateNodeView.swift */; };
 /* End PBXBuildFile section */
@@ -41,6 +41,7 @@
 		0D6AC2942806369400239D1D /* RowSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowSelectView.swift; sourceTree = "<group>"; };
 		0D6AC29828069A7000239D1D /* RowTransitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowTransitionView.swift; sourceTree = "<group>"; };
 		0D6AC29C2807368000239D1D /* ModalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewModel.swift; sourceTree = "<group>"; };
+		0D6C705E280A2A7100ABD112 /* NewMachineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMachineView.swift; sourceTree = "<group>"; };
 		0DC0138428048A4D00194BCB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0DE5D0D428047B1A00CD719F /* Automata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Automata.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DE5D0D728047B1A00CD719F /* AutomataAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomataAppApp.swift; sourceTree = "<group>"; };
@@ -50,7 +51,6 @@
 		0DE5D0E62804821400CD719F /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		0DE5D0E8280485E700CD719F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		0DF68C5D2809BCDF004C2F40 /* MachineRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineRowView.swift; sourceTree = "<group>"; };
-		0DF68C5F2809BE09004C2F40 /* NewMachineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMachineView.swift; sourceTree = "<group>"; };
 		0DF68C612809C363004C2F40 /* EditMachineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMachineView.swift; sourceTree = "<group>"; };
 		0DF68C632809D788004C2F40 /* StateNodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateNodeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -175,7 +175,7 @@
 				0D6AC2942806369400239D1D /* RowSelectView.swift */,
 				0D6AC29828069A7000239D1D /* RowTransitionView.swift */,
 				0DF68C5D2809BCDF004C2F40 /* MachineRowView.swift */,
-				0DF68C5F2809BE09004C2F40 /* NewMachineView.swift */,
+				0D6C705E280A2A7100ABD112 /* NewMachineView.swift */,
 				0DF68C612809C363004C2F40 /* EditMachineView.swift */,
 				0DF68C632809D788004C2F40 /* StateNodeView.swift */,
 			);
@@ -260,11 +260,11 @@
 				0D06D8C72804A30E0036F02F /* MachineModel.swift in Sources */,
 				0DC0138528048A4D00194BCB /* HomeView.swift in Sources */,
 				0D06D8D12804FC0C0036F02F /* HomeViewModel.swift in Sources */,
+				0D6C705F280A2A7100ABD112 /* NewMachineView.swift in Sources */,
 				0DE5D0D828047B1A00CD719F /* AutomataAppApp.swift in Sources */,
 				0D06D83A28048E1B0036F02F /* CircleButtonView.swift in Sources */,
 				0DF68C622809C363004C2F40 /* EditMachineView.swift in Sources */,
 				0D6AC2952806369400239D1D /* RowSelectView.swift in Sources */,
-				0DF68C602809BE09004C2F40 /* NewMachineView.swift in Sources */,
 				0D6AC29D2807368000239D1D /* ModalViewModel.swift in Sources */,
 				0D6AC2932805D25100239D1D /* ModalView.swift in Sources */,
 				0DE5D0E72804821400CD719F /* Color.swift in Sources */,
