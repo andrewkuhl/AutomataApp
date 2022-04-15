@@ -1,7 +1,7 @@
 # Automata: an iOS app implementing the Automata Library. 
 
 ## icon
-![alt text](https://github.com/andrewkuhl/AutomataApp/blob/main/Simulations/logo.png?raw=true)
+![alt text](https://github.com/andrewkuhl/AutomataApp/blob/main/Simulations/icon.png?raw=true)
             
 ## empty main screen
 ![alt text](https://github.com/andrewkuhl/AutomataApp/blob/main/Simulations/1.png?raw=true)
