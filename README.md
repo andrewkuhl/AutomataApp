@@ -2,6 +2,9 @@
 
 <table>
   <tr>
+    <p>"icon"</p>
+  </tr>
+  <tr>
     <td><img src="Simulations/icon.png"  alt="icon"></td>
    </tr> 
    <tr>
