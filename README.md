@@ -1,19 +1,19 @@
 # Automata: an iOS app implementing the Automata Library. 
 
 ## icon
-<img src = "Simulations/logo.png>
+![alt text](https://github.com/andrewkuhl/AutomataApp/blob/main/Simulations/logo.png?raw=true)
             
 ## empty main screen
-<img src = "Simulations/1.png>
+![alt text](https://github.com/andrewkuhl/AutomataApp/blob/main/Simulations/1.png?raw=true)
 
 ## empty machines screen
-<img src = "Simulations/2.png>
-            
+![alt text](https://github.com/andrewkuhl/AutomataApp/blob/main/Simulations/2.png?raw=true)  
+
 ## new machine tab
-<img src = "Simulations/3.png>
+![alt text](https://github.com/andrewkuhl/AutomataApp/blob/main/Simulations/3.png?raw=true)
 
 ## filled machines screen
-<img src = "Simulations/4.png>
-            
+![alt text](https://github.com/andrewkuhl/AutomataApp/blob/main/Simulations/4.png?raw=true) 
+
 ## edit machine screen
-<img src = "Simulations/5.png>
+![alt text](https://github.com/andrewkuhl/AutomataApp/blob/main/Simulations/5.png?raw=true)
